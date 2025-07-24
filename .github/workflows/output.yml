@@ -1,8 +1,9 @@
 name: Output information
 on: workflow_dispatch
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Output GitHub context
-      # we use ${{ ... }} (known as "expression syntax") to write or use the metadata from GitHub 
-      run: echo "${{ toJSON(github) }}"
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub context
+        # we use ${{ ... }} (known as "expression syntax") to write or use the metadata from GitHub 
+        run: echo "${{ toJSON(github) }}"

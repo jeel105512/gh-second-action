@@ -9,7 +9,7 @@ jobs:
       # download/get the code
       - name: Get code
         uses: actions/checkout@v3
-      # just for practice Install NodeJS
+      # just for practice Install NodeJS (the runner ubuntu-latest already have the NodeJS pre insalled)
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with: 

@@ -1,5 +1,7 @@
 name: Test Project
-on: push
+# if we want to run this workflow using multiple Triggers(Events), we list all the triggers(events) in "[..., ...]"
+# this means that this workflow will run both manually and when we push the code
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest

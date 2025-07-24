@@ -21,6 +21,8 @@ jobs:
         run: npm test
 
   deploy:
+    # to make this job run only after some other job finishes we use "needs: job-name"
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code

@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output GitHub context
-        # we use ${{ ... }} (known as "expression syntax") to write or use the metadata from GitHub 
+        # we use ${{ ... }} (the expression syntax) to write or use the metadata from GitHub 
         run: echo "${{ toJSON(github) }}"
